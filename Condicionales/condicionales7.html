@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7</title>
+</head>
+<body>
+    <script>
+    let ciclo = prompt("¿De qué ciclo eres? (FP / ESO / Bachillerato / ...)", "");
+    let edad = prompt("¿Cuántos años tienes?", "0");
+
+    // Convertimos la edad a número
+    edad = Number(edad);
+
+    let tieneAcceso = false;
+
+    if (ciclo === "FP" && edad > 18) {
+        tieneAcceso = true;
+    }
+
+    // Opción más clara con mensajes diferentes según cada caso
+    if (tieneAcceso) {
+        document.write("<h2 style='color:green'>¡BIENVENID@! Tienes acceso al portal web</h2>");
+    } else {
+        if (ciclo === "FP") {
+            document.write("<h2 style='color:red'>No tienes acceso al portal.<br>Tienes que ser mayor de 18 años.</h2>");
+        } else {
+            document.write("<h2 style='color:red'>No tienes acceso al portal.<br>Solo alumnos de FP pueden acceder.</h2>");
+        }
+    }
+</script>
+</body>
+</html>
