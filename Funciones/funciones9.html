@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 9</title>
+    
+<script>
+function Sumar(num1, num2) {
+    let resultado = num1 + num2;
+    document.getElementById("resultado").innerHTML =
+    "La suma es: " + resultado;
+}
+</script>
+
+</head>
+<body>
+
+<h1>Función suma</h1>
+
+<p id="resultado">Aquí se mostrará el resultado</p>
+
+<script>
+    let numero1 = parseInt(prompt("Introduce el primer número"));
+    let numero2 = parseInt(prompt("Introduce el segundo número"));
+    Sumar(numero1, numero2);
+</script>
+    
+</body>
+</html>

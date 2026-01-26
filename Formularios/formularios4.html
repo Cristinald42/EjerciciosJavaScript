@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+<script>
+function calcular() {
+    let numero = document.datos.numero.value;
+    document.datos.cuadrado.value = numero * numero;
+    document.datos.cubo.value = numero * numero * numero;
+}
+</script>
+
+</head>
+<body>
+
+<form name="datos">
+
+Introduce un número:
+<input type="text" name="numero" size="10" />
+<br /><br />
+
+<input type="button" value="Calcular" onclick="calcular()" />
+<br /><br />
+
+Cuadrado:
+<input type="text" name="cuadrado" size="10" />
+<br /><br />
+
+Cubo:
+<input type="text" name="cubo" size="10" />
+<br /><br />
+
+<input type="reset" value="Reset" />
+
+</form>
+    
+</body>
+</html>
